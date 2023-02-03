@@ -4,6 +4,7 @@ import com.mapstructdemo.mapstructdemo.beans.dto.CarDTO;
 import com.mapstructdemo.mapstructdemo.beans.dto.DriverDTO;
 import com.mapstructdemo.mapstructdemo.beans.dto.PartDTO;
 import com.mapstructdemo.mapstructdemo.beans.vo.CarVO;
+import com.mapstructdemo.mapstructdemo.beans.vo.VehicleVO;
 import com.mapstructdemo.mapstructdemo.convert.CarConvert;
 import lombok.Data;
 import org.junit.Test;
@@ -51,6 +52,15 @@ public class MapstructDemoApplicationTests {
         System.out.println(carVOList);
     }
 
+    @Test
+    public void test3(){
+        VehicleVO vehicleVO = new VehicleVO();
+        vehicleVO.setId(9999L);
+        vehicleVO.setPrice(8854.090012);
+        vehicleVO.setBrand("迈巴赫");
+        CarDTO carDTO = CarConvert.INSTANCE.vehicleVO2CarDTO(vehicleVO);
+        System.out.println(carDTO);
+    }
 
     private CarDTO buildCarDTO() {
         CarDTO carDTO = new CarDTO();
