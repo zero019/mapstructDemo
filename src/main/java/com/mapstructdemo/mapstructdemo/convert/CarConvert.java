@@ -59,4 +59,9 @@ public abstract class CarConvert {
         boolean hasPart = partDTOList != null && !partDTOList.isEmpty();
         carVO.setHasPart(hasPart);
     }
+
+    /**
+     * 集合，批量处理
+     */
+    public abstract List<CarVO> dtos2vos(List<CarDTO> carDTOList);
 }

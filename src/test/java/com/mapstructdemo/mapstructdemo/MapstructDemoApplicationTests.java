@@ -40,6 +40,17 @@ public class MapstructDemoApplicationTests {
 //        sdf.format(date);
     }
 
+    @Test
+    public void test2(){
+        CarDTO carDTO = buildCarDTO();
+        List<CarDTO> carDTOList = new ArrayList<>();
+        carDTOList.add(carDTO); //source
+
+        //target
+        List<CarVO> carVOList = CarConvert.INSTANCE.dtos2vos(carDTOList);
+        System.out.println(carVOList);
+    }
+
 
     private CarDTO buildCarDTO() {
         CarDTO carDTO = new CarDTO();
