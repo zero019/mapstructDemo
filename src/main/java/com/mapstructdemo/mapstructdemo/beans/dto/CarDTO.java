@@ -18,6 +18,8 @@ public class CarDTO {
     private double price;
     //上路的价格
     private double totalPrice;
+    //车的颜色,不想将color映射给vo
+    private String color;
     //生产日期
     private Date publishDate;
     //品牌名字

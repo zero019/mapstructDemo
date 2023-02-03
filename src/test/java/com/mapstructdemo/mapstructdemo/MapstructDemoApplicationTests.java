@@ -17,8 +17,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = MapstructDemoApplication.class)
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = MapstructDemoApplication.class)
 public class MapstructDemoApplicationTests {
 
     @Test
@@ -49,6 +49,7 @@ public class MapstructDemoApplicationTests {
         carDTO.setTotalPrice(2131212.222);
         carDTO.setPublishDate(new Date());
         carDTO.setBrand("大众");
+        carDTO.setColor("blue");
         //零件
         PartDTO partDTO1 = new PartDTO();
         partDTO1.setPartId(1L);

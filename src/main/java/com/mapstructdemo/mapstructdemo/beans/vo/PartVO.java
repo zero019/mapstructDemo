@@ -7,8 +7,12 @@ import lombok.Data;
  */
 @Data
 public class PartVO {
-    /**汽车零件的id*/
+    /**
+     * 汽车零件的id
+     */
     private Long partId;
-    /**零件的名字，比如多功能方向盘*/
+    /**
+     * 零件的名字，比如多功能方向盘
+     */
     private String partName;
 }

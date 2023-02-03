@@ -9,7 +9,7 @@ import lombok.Data;
 public class DriverVO {
     /**
      * 驾驶员名字
-     * */
+     */
     private Long driverId;
-    private String name;
+    private String fullName;
 }

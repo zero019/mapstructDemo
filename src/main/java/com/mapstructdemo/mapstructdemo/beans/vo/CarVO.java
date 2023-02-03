@@ -19,10 +19,12 @@ public class CarVO {
     private String vin;
     //裸车价格
     private double price;
-    //上路的价格
-    private double totalPrice;
+    //上路的价格,注意这里是String，因为DecimalFormat（反编译）是返回text文本
+    private String totalPrice;
+    //车的颜色
+    private String color;
     //生产日期
-    private Date publishDate;
+    private String publishDate;
     //品牌名字
     private String brandName;
     //是否配置了零件
